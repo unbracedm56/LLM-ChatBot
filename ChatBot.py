@@ -1,5 +1,4 @@
 import os
-from API_KEYS import groq_api_key
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.chat_history import (BaseChatMessageHistory, InMemoryChatMessageHistory)
@@ -7,7 +6,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 import streamlit as st
 
-os.environ["GROQ_API_KEY"] = groq_api_key
+os.environ["GROQ_API_KEY"] = "your groq api key here"
 model = ChatGroq(model="llama3-8b-8192")
 store = {}
 if "store" not in st.session_state:
