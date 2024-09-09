@@ -21,7 +21,7 @@ To run this project, you will need to install the following dependencies:
 You can install the required packages using `pip`:
 
 ```bash
-pip install streamlit langchain
+pip install streamlit langchain langchain_groq
 ```
 
 ## Getting Started
